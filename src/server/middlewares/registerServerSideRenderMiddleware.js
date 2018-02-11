@@ -26,8 +26,8 @@ const registerServerSideRenderMiddleware = app => {
     res.write(`
       <!doctype html>
       <div id="app">${html}</div>
-      <link rel="preload" as="script" href=${bundleInfo.bundle.js} />
-      <link rel="preload" as="script" href=${bundleInfo.vendor.js} />
+      <script type="text/javascript" src=${bundleInfo.vendor.js}></script>
+      <script type="text/javascript" src=${bundleInfo.bundle.js}></script>
     `);
     res.end();
   });
