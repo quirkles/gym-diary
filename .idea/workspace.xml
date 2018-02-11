@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e48c133-9db3-46fc-bebd-48e26ffcea5b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/git-hooks/pre-commit" afterPath="$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/setup-pre-commit-hook.sh" afterPath="$PROJECT_DIR$/scripts/setup-pre-commit-hook.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh" afterPath="$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup-pre-commit-hook.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setup-pre-commit-hook.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/setup-pre-commit-hook.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
@@ -59,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pre-commit.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pre-commit.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="80">
+              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -110,8 +108,8 @@
         <option value="$PROJECT_DIR$/scripts/git-hooks/pre-commit" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/server/middlewares/registerCommonMiddleware.js" />
-        <option value="$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh" />
         <option value="$PROJECT_DIR$/scripts/setup-pre-commit-hook.sh" />
+        <option value="$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh" />
       </list>
     </option>
   </component>
@@ -352,12 +350,12 @@
       <updated>1517877703925</updated>
       <workItem from="1517877708296" duration="5651000" />
       <workItem from="1518137904170" duration="2459000" />
-      <workItem from="1518306463437" duration="3568000" />
+      <workItem from="1518306463437" duration="3720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11678000" />
+    <option name="totallyTimeSpent" value="11830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -712,18 +710,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/setup-pre-commit-hook.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/git-hooks/pre-commit.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding />
         </state>
       </provider>
