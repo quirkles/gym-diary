@@ -41,6 +41,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "lint": "eslint ."
+    "lint": "eslint src --ext .js,.jsx"
   }
 }

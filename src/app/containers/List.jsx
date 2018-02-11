@@ -1,3 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export default () => <div>List of stuff</div>
+const List = () => <div>List of stuff</div>;
+
+export default List;
