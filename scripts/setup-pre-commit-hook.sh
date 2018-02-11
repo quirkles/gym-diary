@@ -2,4 +2,4 @@
 
 cd `dirname $0`
 
-ln -f ./git-hooks/pre-commit ../.git/hooks/pre-commit
+ln -f ./git-hooks/pre-commit.sh ../.git/hooks/pre-commit
