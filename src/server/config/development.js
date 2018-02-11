@@ -1,4 +1,4 @@
 export default {
   port: 3030,
-  projectName: 'gym-diary'
-}
+  projectName: 'gym-diary',
+};

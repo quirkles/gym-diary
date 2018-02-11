@@ -1,3 +1,3 @@
-import development from './development'
+import development from './development';
 
-export default development
+export default development;

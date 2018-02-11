@@ -1,26 +1,37 @@
-import React from 'react'
+/* global process, require */
+import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 import { StaticRouter } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
-import routes from '../../app/routes'
+import routes from '../../app/routes';
 
 const registerServerSideRenderMiddleware = app => {
+  const bundleInfo =
+    process.env.NODE_ENV === 'development'
+      ? {
+          bundle: { js: '/static/bundle.js' },
+          vendor: { js: '/static/vendor.js' },
+        }
+      : require('../../../bundleInfo.json'); // eslint-disable-line import/no-unresolved
+
   app.use((req, res) => {
     let context = {};
     const html = ReactDOMServer.renderToString(
       <StaticRouter location={req.url} context={context}>
         {renderRoutes(routes)}
-      </StaticRouter>
-    )
+      </StaticRouter>,
+    );
     res.write(`
       <!doctype html>
       <div id="app">${html}</div>
-    `)
-    res.end()
-  })
-  return app
-}
+      <link href=${bundleInfo.bundle.js} />
+      <link href=${bundleInfo.vendor.js} />
+    `);
+    res.end();
+  });
+  return app;
+};
 
-export default registerServerSideRenderMiddleware
+export default registerServerSideRenderMiddleware;
