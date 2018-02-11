@@ -7,7 +7,7 @@ import expressWinston from 'express-winston';
 import logger from '../logger';
 
 const registerCommonMiddleware = app => {
-  app.use(compression());
+  app.use(compression())
   app.use(
     '/static',
     express.static(path.join(__dirname, '../../../public'), { maxAge: '365d' }),
