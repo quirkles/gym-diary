@@ -17,6 +17,8 @@ configureStore takes 3 args, the root reducer, init store state, and additional 
 by default, configureStore comes with redux-logger middleware. Here we
 registering our fetchMiddleware
 */
+console.log(`\n\n\#####\n\nYARRRRRR\n\n####\n\n`) // eslint-disable-line
+
 
 ReactDOM.hydrate(
   <Provider store={{}}>

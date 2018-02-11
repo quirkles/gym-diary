@@ -6,10 +6,10 @@ const App = ({ children }) => (
   <div>
     <ul>
       <li>
-        <NavLink to="/link" />
+        <NavLink to="/home">home</NavLink>
       </li>
       <li>
-        <NavLink to="/home" />
+        <NavLink to="/list">list</NavLink>
       </li>
     </ul>
     <div>{children}</div>

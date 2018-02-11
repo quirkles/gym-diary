@@ -10,7 +10,7 @@ const registerCommonMiddleware = app => {
   app.use(compression());
   app.use(
     '/static',
-    express.static(path.join(__dirname, '../../../public'), { maxAge: '365d' }),
+    express.static(path.join(__dirname, '../../../dist'), { maxAge: '365d' }),
   );
   app.use(cookieParser());
   app.use(expressWinston.logger({ winstonInstance: logger }));
