@@ -42,7 +42,7 @@
     "webpack-merge": "^4.1.1"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --color -d --watch --devtool inline-source-map",
     "lint": "eslint src --ext .js,.jsx",
     "start": "babel-node src/server"
   }

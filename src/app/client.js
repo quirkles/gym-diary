@@ -4,7 +4,9 @@ import React from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
+import { Router } from 'react-router';
+import { routerMiddleware } from 'react-router-redux';
+import { renderRoutes } from 'react-router-config';
 import createBrowserHistory from 'history/createBrowserHistory';
 
 import routes from './routes';
@@ -24,9 +26,11 @@ by default, configureStore comes with redux-logger middleware. Here we
 registering our fetchMiddleware
 */
 
+console.log(`\n\n\#####\n\nYES\n\n####\n\n`) // eslint-disable-line
+
 ReactDOM.hydrate(
   <Provider store={store}>
-    <ConnectedRouter history={history} routes={routes} />
+    <Router history={history}>{renderRoutes(routes)}</Router>
   </Provider>,
   rootEl,
 );
