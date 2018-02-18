@@ -26,8 +26,6 @@ by default, configureStore comes with redux-logger middleware. Here we
 registering our fetchMiddleware
 */
 
-console.log(`\n\n\#####\n\nYES\n\n####\n\n`) // eslint-disable-line
-
 ReactDOM.hydrate(
   <Provider store={store}>
     <Router history={history}>{renderRoutes(routes)}</Router>

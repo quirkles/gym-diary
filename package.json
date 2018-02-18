@@ -35,14 +35,20 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "concurrently": "^3.5.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.6.1",
     "prettier": "1.10.2",
+    "rimraf": "^2.6.2",
     "webpack": "^3.11.0",
     "webpack-merge": "^4.1.1"
   },
   "scripts": {
-    "build": "webpack --color -d --watch --devtool inline-source-map",
+    "dev": "concurrently 'yarn run dev:server' 'yarn run dev:client'",
+    "dev:server": "NODE_ENV=development BABEL_ENV=node babel-watch src/server/index.js -w src -e js,jsx -i dist",
+    "dev:client": "webpack --color -d --watch --devtool eval-source-map",
+    "clean": "rimraf dist",
     "lint": "eslint src --ext .js,.jsx",
     "start": "babel-node src/server"
   }
