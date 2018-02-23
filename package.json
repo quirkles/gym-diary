@@ -37,6 +37,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-watch": "^2.0.7",
     "concurrently": "^3.5.1",
+    "cross-env": "^5.1.3",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.6.1",
     "prettier": "1.10.2",
@@ -45,8 +46,8 @@
     "webpack-merge": "^4.1.1"
   },
   "scripts": {
-    "dev": "concurrently 'yarn run dev:server' 'yarn run dev:client'",
-    "dev:server": "NODE_ENV=development BABEL_ENV=node babel-watch src/server/index.js -w src -e js,jsx -i dist",
+    "dev": "concurrently \"yarn run dev:server\" \"yarn run dev:client\"",
+    "dev:server": "cross-env NODE_ENV=development BABEL_ENV=node babel-watch src/server/index.js -w src -e js,jsx -i dist",
     "dev:client": "webpack --color -d --watch --devtool eval-source-map",
     "clean": "rimraf dist",
     "lint": "eslint src --ext .js,.jsx",
