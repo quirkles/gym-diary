@@ -12,6 +12,7 @@
     "cookie-parser": "^1.4.3",
     "eslint": "4.17.0",
     "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-jest": "^21.12.2",
     "eslint-plugin-prettier": "2.6.0",
     "express": "^4.16.2",
     "express-winston": "^2.4.0",
@@ -37,8 +38,13 @@
     "babel-preset-react": "^6.24.1",
     "babel-watch": "^2.0.7",
     "concurrently": "^3.5.1",
+    "css-mediaquery": "^0.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.6.1",
+    "jest": "^22.4.2",
     "prettier": "1.10.2",
     "rimraf": "^2.6.2",
     "webpack": "^3.11.0",
@@ -50,6 +56,8 @@
     "dev:client": "webpack --color -d --watch --devtool eval-source-map",
     "clean": "rimraf dist",
     "lint": "eslint src --ext .js,.jsx",
+    "test": "yarn run unit",
+    "unit": "jest",
     "start": "babel-node src/server"
   }
 }

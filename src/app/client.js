@@ -26,9 +26,10 @@ by default, configureStore comes with redux-logger middleware. Here we
 registering our fetchMiddleware
 */
 
-ReactDOM.hydrate(
+export const getDomTree = () => (
   <Provider store={store}>
     <Router history={history}>{renderRoutes(routes)}</Router>
-  </Provider>,
-  rootEl,
+  </Provider>
 );
+
+ReactDOM.hydrate(getDomTree(), rootEl);
