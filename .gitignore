@@ -1,5 +1,3 @@
 node_modules/**
 .idea/**
 dist/**
-bundleInfo.json/**
-combined.log/**
