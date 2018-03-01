@@ -12,6 +12,9 @@ const App = ({ route }) => (
       <li>
         <NavLink to="/list">list</NavLink>
       </li>
+      <li>
+        <NavLink to="/signup">Sign up</NavLink>
+      </li>
     </ul>
     <div>{renderRoutes(route.routes)}</div>
   </div>

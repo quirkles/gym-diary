@@ -52,7 +52,7 @@
     "webpack-merge": "^4.1.1"
   },
   "scripts": {
-    "dev": "concurrently 'yarn run dev:server' 'yarn run dev:client'",
+    "dev": "concurrently \"yarn run dev:server\" \"yarn run dev:client\"",
     "dev:server": "cross-env NODE_ENV=development BABEL_ENV=node babel-watch src/server/index.js -w src -e js,jsx -i dist",
     "dev:client": "webpack --color -d --watch --devtool eval-source-map",
     "clean": "rimraf dist",
