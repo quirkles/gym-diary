@@ -18,8 +18,9 @@ const App = ({ route }) => (
 );
 
 App.propTypes = {
-  children: propTypes.arrayOf(propTypes.node),
-  route: propTypes.object.isRequired,
+  route: propTypes.shape({
+    routes: propTypes.array.isRequired,
+  }).isRequired,
 };
 
 export default App;

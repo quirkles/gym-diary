@@ -8,7 +8,7 @@ exports[`client bootstrap renders the dom tree and hydrates the initial state 1`
     history="BROWSER_HISTORY"
   >
     <div>
-      ROUTES
+      "ROUTES"
     </div>
   </Router>
 </Provider>

@@ -8,3 +8,5 @@ export const createStore = jest.fn((reducers, middleware) =>
 export const applyMiddleware = jest.fn(middleware =>
   JSON.stringify(middleware),
 );
+
+export const combineReducers = jest.fn(reducers => reducers);
