@@ -5,11 +5,11 @@ const Signup = () => {
     <div>
       <h3>Sign up</h3>
       <div>
-        <form method="POST" action="">
+        <form>
           <input type="text" name="email" placeholder="email" />
           <input type="password" name="password" placeholder="password" />
           <input type="text" name="confirm" placeholder="Confirm password" />
-          <input type="submit" value="Sign up" />
+          <button>Sign up</button>
           <p>or</p>
           <button>Sign up with Facebook</button>
         </form>
