@@ -1,3 +1,5 @@
+/* global __dirname */
+
 import path from 'path';
 import registerCommonMiddleware from '../registerCommonMiddleware';
 

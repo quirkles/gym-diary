@@ -37,6 +37,17 @@ exports[`App container Renders with route and matches snapshot 1`] = `
           </a>
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/signup"
+        >
+          <a
+            href="/signup"
+          >
+            Sign up
+          </a>
+        </NavLink>
+      </li>
     </ul>
     <div>
       <div>
