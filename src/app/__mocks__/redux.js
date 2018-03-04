@@ -10,3 +10,5 @@ export const applyMiddleware = jest.fn(middleware =>
 );
 
 export const combineReducers = jest.fn(reducers => reducers);
+
+export const compose = jest.fn(middleware => middleware);

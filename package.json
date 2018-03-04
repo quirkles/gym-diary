@@ -17,6 +17,7 @@
     "express": "^4.16.2",
     "express-winston": "^2.4.0",
     "history": "^4.7.2",
+    "immutable": "^3.8.2",
     "prop-types": "^15.6.0",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
@@ -54,7 +55,7 @@
   "scripts": {
     "dev": "concurrently \"yarn run dev:server\" \"yarn run dev:client\"",
     "dev:server": "cross-env NODE_ENV=development BABEL_ENV=node babel-watch src/server/index.js -w src -e js,jsx -i dist",
-    "dev:client": "webpack --color -d --watch --devtool eval-source-map",
+    "dev:client": "cross-env NODE_ENV=development webpack --color -d --watch --devtool eval-source-map",
     "clean": "rimraf dist",
     "lint": "eslint src --ext .js,.jsx",
     "test": "yarn run unit",
