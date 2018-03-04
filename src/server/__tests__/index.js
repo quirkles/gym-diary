@@ -5,7 +5,7 @@ jest.mock('../startApp', () => {
 });
 
 jest.mock('../middlewares/registerCommonMiddleware', () => {
-  return app => `${app}: registered common middleware`;
+  return app => `${app.message}: registered common middleware`;
 });
 
 jest.mock('../middlewares/registerServerSideRenderMiddleware', () => {
