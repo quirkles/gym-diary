@@ -130,7 +130,7 @@ describe('updateFormField action', () => {
       },
     });
   });
-  it('Generate expected action when passed immutable payload: ignores extra fields', () => {
+  it('Generates expected action when passed immutable payload: ignores extra fields', () => {
     const validPayload = {
       formName: 'login',
       fieldName: 'username',
